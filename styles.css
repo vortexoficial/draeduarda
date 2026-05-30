@@ -950,7 +950,7 @@ select {
   overflow: hidden;
   padding: clamp(76px, 8vw, 122px) 0;
   background-color: transparent;
-  background-image: url("fundosessao.png");
+  background-image: url("fundosessao-720.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -959,7 +959,7 @@ select {
 
 @media (min-width: 721px) {
   .symptoms-section {
-    background-image: url("fundosessao1.png");
+    background-image: url("fundosessao1-1280.webp");
   }
 }
 
