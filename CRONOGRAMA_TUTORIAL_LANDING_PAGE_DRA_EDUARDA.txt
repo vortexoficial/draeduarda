@@ -1,0 +1,653 @@
+CRONOGRAMA TUTORIAL - LANDING PAGE DRA. EDUARDA CAMPOS
+Versao: 1.0
+Objetivo: desenvolver a landing page secao por secao, com alto nivel visual, clareza comercial, responsabilidade medica e acabamento profissional.
+
+----------------------------------------------------------------------
+1. DIRECAO CRIATIVA GLOBAL
+----------------------------------------------------------------------
+
+Conceito da pagina:
+Uma landing page medica premium, humana e acolhedora, com estetica sofisticada, feminina sem ser delicada demais, cientifica sem parecer fria, e luxuosa sem perder acessibilidade.
+
+Personalidade visual:
+- Premium, serena, clinica, humana e editorial.
+- Design com atmosfera de cuidado, escuta e confianca.
+- Ritmo visual elegante: secoes bem respiradas, bons contrastes, hierarquia forte e microinteracoes sutis.
+- Criatividade obrigatoria em cada secao, mas sempre com sobriedade por se tratar de publicidade medica.
+
+Paleta principal:
+- Fundo rubi profundo: #310711
+- Fundo rubi medio: #4B0B1A
+- Fundo rubi luminoso: #661629
+- Dourado claro da logo: #FFF6E1
+- Dourado fosco da logo: #C4B290
+- Branco quente: #FBF7F0
+- Texto secundario claro: #E9DCC8
+- Linha/borda dourada translucida: rgba(255, 246, 225, 0.18)
+
+Gradientes recomendados:
+- Fundo principal: linear-gradient(135deg, #2A050D 0%, #4B0B1A 48%, #661629 100%)
+- Fundo de bloco escuro: radial-gradient(circle at 20% 10%, rgba(255,246,225,0.12), transparent 32%), linear-gradient(145deg, #350813, #5B1024)
+- Dourado da marca: linear-gradient(135deg, #FFF6E1 0%, #D8C8A7 48%, #C4B290 100%)
+- Linha premium: linear-gradient(90deg, transparent, rgba(255,246,225,0.62), transparent)
+
+Tipografia sugerida:
+- Titulos: serifada elegante ou display clinica, exemplo Playfair Display, Cormorant Garamond ou Fraunces.
+- Corpo: sans legivel, exemplo Inter, Lato, Source Sans 3 ou Manrope.
+- Usar escala consistente, sem exagero. Titulos grandes apenas no hero e CTA final.
+
+Regras de design obrigatorias:
+- Cada secao deve ter um conceito visual proprio, sem parecer repeticao de cards.
+- Nao criar layout generico. Cada secao precisa ter composicao, ritmo e detalhe visual intencional.
+- Usar 100% da criatividade disponivel em cada prompt, mantendo elegancia, clareza e responsabilidade.
+- Nao usar promessas de resultado, antes/depois, linguagem sensacionalista ou garantias.
+- Manter depoimentos anonimizados, discretos e sem transformar relato em promessa.
+- Manter informacoes de CRM/RQE/Nao Especialista conforme definicao final da profissional.
+- Botao principal sempre leva ao WhatsApp.
+- Garantir contraste AA, mobile-first, botoes com area minima de toque de 44px.
+- Usar animacoes sutis: fade, translate, reveal, hover leve e progresso visual. Respeitar prefers-reduced-motion.
+- Cada secao deve ser aprovada antes de iniciar a proxima.
+
+Mensagem fixa de WhatsApp:
+Ola! Gostaria de agendar uma consulta com a Dra. Eduarda Campos.
+
+Tenho interesse em:
+( ) Consulta presencial
+( ) Teleconsulta
+
+Meu principal objetivo com a consulta e: __________
+
+----------------------------------------------------------------------
+2. COMO USAR ESTE CRONOGRAMA
+----------------------------------------------------------------------
+
+Metodo:
+1. Desenvolver apenas uma secao por vez.
+2. Finalizar a estrutura HTML/JSX da secao.
+3. Aplicar design responsivo e microinteracoes.
+4. Revisar copy, acessibilidade, responsividade e CTA.
+5. Testar desktop e mobile.
+6. So entao avancar para a proxima secao.
+
+Checklist global antes de iniciar:
+[ ] Confirmar link final do WhatsApp.
+[ ] Confirmar CRM, UF, RQE se houver e texto "Nao Especialista" se aplicavel.
+[ ] Confirmar endereco/localizacao do atendimento presencial.
+[ ] Confirmar se os numeros +850 e 167 avaliacoes estao atualizados.
+[ ] Confirmar fotos profissionais ou decidir placeholders temporarios.
+[ ] Definir stack do projeto: HTML/CSS/JS, React, Next, Vite ou outra.
+[ ] Preparar tokens de cor, tipografia, espacamentos, radius e sombras.
+[ ] Configurar responsividade base: 375px, 768px, 1024px e 1440px.
+
+----------------------------------------------------------------------
+3. FASE 0 - FUNDAÇÃO VISUAL E COMPONENTES BASE
+----------------------------------------------------------------------
+
+Objetivo:
+Criar a base visual da landing page antes das secoes: variaveis de cor, fontes, botoes, containers, grid, badges, cards, divisores, animacoes e estados interativos.
+
+Prompt da fase:
+"Crie a fundacao visual da landing page da Dra. Eduarda Campos com design medico premium, criativo, sofisticado e acolhedor. Use 100% da sua capacidade criativa para transformar a paleta rubi com gradiente dourado pouco saturado em um sistema visual memoravel, elegante e responsivo. A fundacao deve parecer exclusiva, nao generica, com tokens claros de cor, tipografia, espacamento, botoes, cards, divisores, sombras, microinteracoes e acessibilidade."
+
+Checklist de implementacao:
+[ ] Criar variaveis/tokens para rubi, dourado, branco quente, textos e bordas.
+[ ] Criar estilos globais de body, links, headings, paragrafos e selecao de texto.
+[ ] Criar componente de botao primario em gradiente dourado.
+[ ] Criar botao secundario com borda dourada translucida.
+[ ] Criar badge premium para infos curtas.
+[ ] Criar container responsivo padrao.
+[ ] Criar divisores ornamentais sutis inspirados na logo.
+[ ] Criar animacoes de entrada leves por secao.
+[ ] Criar estados hover, focus, disabled e active.
+[ ] Preparar utilitarios para cards escuros e superfícies translúcidas.
+
+Criterios de aprovacao:
+[ ] A pagina ja tem personalidade visual mesmo sem conteudo completo.
+[ ] O dourado nao esta saturado ou chamativo demais.
+[ ] O rubi nao reduz legibilidade.
+[ ] Os botoes parecem clicaveis, premium e acessiveis.
+[ ] Nao ha excesso de brilho, glitter, blur ou decoracao sem funcao.
+
+----------------------------------------------------------------------
+4. SECAO 1 - HERO
+----------------------------------------------------------------------
+
+Objetivo:
+Gerar impacto imediato, mostrar posicionamento medico-humanizado, modalidades de atendimento e CTA para WhatsApp.
+
+Design sugerido:
+Hero full viewport parcial, com fundo rubi em gradiente, logo em destaque controlado, foto da Dra. Eduarda ou composicao visual medica premium. Usar linhas douradas finas, brilho suave localizado e area de CTA forte. Deixar uma pista visual da proxima secao abaixo da dobra.
+
+Prompt da secao:
+"Desenvolva apenas a secao HERO da landing page da Dra. Eduarda Campos. Use 100% da sua capacidade criativa para criar um hero profissional, premium, humano e sofisticado, com fundo rubi em gradiente e dourado pouco saturado inspirado na logo. A secao deve comunicar cuidado medico que enxerga alem do peso, dos hormonios e dos exames, trazer CTA claro para WhatsApp, destacar consulta presencial na Baixada Santista e teleconsulta para todo o Brasil, e parecer uma experiencia visual exclusiva, nao um template generico."
+
+Checklist de implementacao:
+[ ] Inserir H1 da copy.
+[ ] Inserir subtitulo e paragrafo de apoio.
+[ ] Inserir CTA principal "Agendar consulta pelo WhatsApp".
+[ ] Inserir linha de beneficios: Presencial com bioimpedancia, Teleconsulta, Retorno em ate 30 dias.
+[ ] Adicionar logo ou monograma em composicao elegante.
+[ ] Criar area visual para foto profissional ou placeholder premium.
+[ ] Garantir que o CTA aparece no primeiro viewport mobile.
+[ ] Garantir que a proxima secao aparece levemente ao final do hero.
+[ ] Adicionar microinteracao no CTA e badges.
+[ ] Configurar anchor/scroll para CTA se necessario.
+
+Criterios de aprovacao:
+[ ] A proposta da medica fica clara em menos de 5 segundos.
+[ ] O hero passa confianca, cuidado e sofisticacao.
+[ ] O design nao parece propaganda agressiva.
+[ ] Mobile esta impecavel, sem texto espremido.
+
+----------------------------------------------------------------------
+5. SECAO 2 - PROVA SOCIAL / NUMEROS
+----------------------------------------------------------------------
+
+Objetivo:
+Reforcar autoridade e confianca sem exagero comercial.
+
+Design sugerido:
+Faixa premium logo apos o hero, com quatro indicadores em composicao horizontal no desktop e grid 2x2 no mobile. Usar numeros em dourado, labels em branco quente e divisores finos.
+
+Prompt da secao:
+"Desenvolva apenas a secao de PROVA SOCIAL / NUMEROS. Use 100% da sua capacidade criativa para criar uma faixa de autoridade medica elegante, com numeros em destaque, gradiente dourado pouco saturado e fundo rubi profundo. O design deve transmitir reconhecimento, escuta, acolhimento e atencao aos detalhes, sem parecer ostentacao ou promessa de resultado."
+
+Checklist de implementacao:
+[ ] Inserir titulo da secao.
+[ ] Inserir metricas: +850 atendimentos, 167 avaliacoes 5 estrelas, presencial e online, retorno em ate 30 dias.
+[ ] Criar layout responsivo.
+[ ] Usar numeros com tipografia de destaque.
+[ ] Incluir nota visual discreta de conferência dos dados antes da publicacao, se adequado ao rodape ou checklist interno.
+[ ] Evitar icones chamativos demais.
+[ ] Validar contraste dos numeros dourados.
+
+Criterios de aprovacao:
+[ ] Os numeros sao escaneaveis rapidamente.
+[ ] A secao apoia o hero sem competir com ele.
+[ ] O tom segue responsavel e medico.
+
+----------------------------------------------------------------------
+6. SECAO 3 - IDENTIFICACAO COM A DOR
+----------------------------------------------------------------------
+
+Objetivo:
+Conectar com pacientes que sentem que suas queixas foram minimizadas.
+
+Design sugerido:
+Secao editorial, com texto forte de um lado e lista de sintomas do outro em chips/linhas delicadas. Usar movimento sutil de revelacao item a item. Atmosfera de acolhimento, nao de alarme.
+
+Prompt da secao:
+"Desenvolva apenas a secao de IDENTIFICACAO COM A DOR. Use 100% da sua capacidade criativa para criar uma secao emocional, acolhedora e sofisticada, com fundo rubi em gradiente e detalhes dourados pouco saturados. A composicao deve fazer a paciente sentir que finalmente esta sendo escutada, apresentando sintomas e queixas sem gerar medo, culpa ou sensacionalismo."
+
+Checklist de implementacao:
+[ ] Inserir titulo "Talvez voce nao esteja buscando apenas emagrecer..."
+[ ] Inserir paragrafos de contexto.
+[ ] Transformar lista de dores em layout visual escaneavel.
+[ ] Inserir CTA "Quero conversar sobre minha consulta".
+[ ] Criar transicao suave entre prova social e dor.
+[ ] Evitar excesso de texto em uma unica coluna no mobile.
+[ ] Garantir que chips/lista nao criem poluicao visual.
+
+Criterios de aprovacao:
+[ ] A secao gera identificacao sem dramatizar.
+[ ] A leitura e leve mesmo com muitos sintomas.
+[ ] O CTA aparece naturalmente no fim da narrativa.
+
+----------------------------------------------------------------------
+7. SECAO 4 - DIFERENCIAL DA CONSULTA
+----------------------------------------------------------------------
+
+Objetivo:
+Mostrar que a consulta parte da historia da paciente, nao de protocolo pronto.
+
+Design sugerido:
+Layout tipo "mapa de investigacao clinica": centro com frase principal e orbitas/linhas finas ligando rotina, sintomas, sono, exames, historico e objetivos. Usar dourado como linha-guia.
+
+Prompt da secao:
+"Desenvolva apenas a secao DIFERENCIAL. Use 100% da sua capacidade criativa para criar uma secao profissional e memoravel que mostre que a consulta comeca pela historia da paciente, nao por protocolo pronto. Use fundo rubi, detalhes em gradiente dourado pouco saturado e uma composicao visual criativa que represente investigacao, escuta e cuidado individualizado."
+
+Checklist de implementacao:
+[ ] Inserir titulo e paragrafos da copy.
+[ ] Criar visual para os pontos avaliados: rotina, sintomas, sono, historico, exames, dificuldades e objetivos.
+[ ] Inserir frase de fechamento: "Atendimento com escuta. Condutas com ciencia. Acompanhamento com respeito."
+[ ] Criar grid ou composicao visual responsiva.
+[ ] Usar iconografia linear consistente se houver icones.
+[ ] Evitar card dentro de card.
+[ ] Garantir que o visual nao pareca dashboard tecnico frio.
+
+Criterios de aprovacao:
+[ ] A secao explica o metodo com clareza.
+[ ] O design passa personalizacao e profundidade.
+[ ] O texto nao fica excessivamente longo no desktop.
+
+----------------------------------------------------------------------
+8. SECAO 5 - AREAS DE ATENDIMENTO
+----------------------------------------------------------------------
+
+Objetivo:
+Organizar os principais temas de atendimento de forma escaneavel e confiavel.
+
+Design sugerido:
+Grid de areas com cards premium compactos, cada card com icone linear, titulo, texto curto e detalhe dourado. No mobile, cards em lista vertical bem ritmada.
+
+Prompt da secao:
+"Desenvolva apenas a secao AREAS DE ATENDIMENTO. Use 100% da sua capacidade criativa para criar um grid profissional, elegante e altamente escaneavel para apresentar emagrecimento, menopausa, diabetes, hipertensao, qualidade de vida e terapia de afirmacao de genero. Use rubi em gradiente, dourado pouco saturado e cards sobrios, com visual premium e humano."
+
+Checklist de implementacao:
+[ ] Inserir titulo da secao.
+[ ] Criar 6 blocos de atendimento.
+[ ] Garantir textos objetivos e sem promessa de resultado.
+[ ] Adicionar icones consistentes ou marcadores dourados.
+[ ] Criar hover sutil nos cards.
+[ ] Garantir que cards tenham altura equilibrada no desktop.
+[ ] Garantir leitura confortavel no mobile.
+
+Criterios de aprovacao:
+[ ] O usuario entende rapidamente se seu caso se encaixa.
+[ ] O grid tem variedade visual sem perder unidade.
+[ ] A secao nao parece uma lista fria de servicos.
+
+----------------------------------------------------------------------
+9. SECAO 6 - PARA MULHERES
+----------------------------------------------------------------------
+
+Objetivo:
+Falar diretamente com mulheres no climatério, perimenopausa e menopausa.
+
+Design sugerido:
+Secao editorial mais intima, com fundo rubi mais suave, detalhe em dourado como moldura parcial e uma imagem/recorte feminino elegante se houver asset. Priorizar acolhimento e legitimacao das queixas.
+
+Prompt da secao:
+"Desenvolva apenas a secao PARA MULHERES. Use 100% da sua capacidade criativa para criar uma area visual sensivel, sofisticada e acolhedora para mulheres que sentem que o corpo mudou e nao querem mais ter suas queixas minimizadas. Use fundo rubi em gradiente, dourado pouco saturado, ritmo editorial premium e CTA claro, sem estereotipos visuais ou promessa de tratamento."
+
+Checklist de implementacao:
+[ ] Inserir titulo e paragrafos da copy.
+[ ] Destacar frase "Seu desconforto merece atencao. Sua historia merece cuidado."
+[ ] Inserir CTA "Agendar minha consulta".
+[ ] Criar composicao visual diferente da secao de dor.
+[ ] Evitar imagens genericas de banco muito artificiais.
+[ ] Garantir que o texto tenha espaco e respiracao.
+
+Criterios de aprovacao:
+[ ] A secao fala com mulheres sem infantilizar.
+[ ] O design e acolhedor e premium.
+[ ] A CTA aparece como proximo passo natural.
+
+----------------------------------------------------------------------
+10. SECAO 7 - EMAGRECIMENTO
+----------------------------------------------------------------------
+
+Objetivo:
+Apresentar emagrecimento como processo medico individualizado, sem culpa e sem formulas prontas.
+
+Design sugerido:
+Composicao em blocos ritmados: "sem promessas imediatas", "sem culpa", "sem tratamento igual para todos" como tres declaracoes visuais fortes. Usar linhas douradas e fundo rubi escuro.
+
+Prompt da secao:
+"Desenvolva apenas a secao EMAGRECIMENTO. Use 100% da sua capacidade criativa para criar uma secao clara, humana e visualmente forte sobre emagrecimento com acompanhamento medico. O design deve comunicar investigacao, individualizacao e ausencia de julgamento, usando rubi em gradiente e dourado pouco saturado, sem apelo milagroso, antes/depois ou promessa de resultado."
+
+Checklist de implementacao:
+[ ] Inserir titulo e texto da copy.
+[ ] Destacar fatores envolvidos: sono, ansiedade, metabolismo, resistencia a insulina, menopausa, rotina, medicamentos e historico.
+[ ] Destacar os tres "sem": sem promessas imediatas, sem culpa, sem tratamento igual para todos.
+[ ] Fechar com "Com medicina, escuta e acompanhamento individualizado."
+[ ] Criar layout responsivo com leitura fluida.
+[ ] Evitar imagem de balanca como elemento dominante.
+
+Criterios de aprovacao:
+[ ] A secao diferencia a abordagem medica de solucoes rapidas.
+[ ] O tom e responsavel e empatico.
+[ ] O visual e criativo sem perder sobriedade.
+
+----------------------------------------------------------------------
+11. SECAO 8 - COMO FUNCIONA A CONSULTA
+----------------------------------------------------------------------
+
+Objetivo:
+Explicar o processo em quatro passos simples.
+
+Design sugerido:
+Timeline vertical no mobile e horizontal/diagonal no desktop, com pontos dourados e pequenos textos. A sensacao deve ser de caminho guiado.
+
+Prompt da secao:
+"Desenvolva apenas a secao COMO FUNCIONA A CONSULTA. Use 100% da sua capacidade criativa para criar uma timeline premium, clara e acolhedora em quatro etapas: escuta cuidadosa, avaliacao individualizada, orientacao clara e plano de acompanhamento. Use fundo rubi, detalhes dourados pouco saturados e microinteracoes sutis que reforcem a ideia de acompanhamento."
+
+Checklist de implementacao:
+[ ] Inserir titulo da secao.
+[ ] Criar quatro etapas numeradas.
+[ ] Usar texto da copy em cada etapa.
+[ ] Criar timeline responsiva.
+[ ] Garantir leitura facil no mobile.
+[ ] Adicionar animacao leve de progresso/reveal.
+[ ] Evitar excesso de icones diferentes.
+
+Criterios de aprovacao:
+[ ] O paciente entende o que acontece na consulta.
+[ ] A timeline da seguranca e reduz ansiedade.
+[ ] A secao tem ritmo e nao parece burocratica.
+
+----------------------------------------------------------------------
+12. SECAO 9 - MODALIDADES DE ATENDIMENTO
+----------------------------------------------------------------------
+
+Objetivo:
+Apresentar presencial e teleconsulta com investimento, inclusoes e CTA.
+
+Design sugerido:
+Duas colunas comparativas premium, com destaque equilibrado. Presencial pode ter selo de bioimpedancia; teleconsulta pode ter selo de praticidade nacional. Precos em dourado com tipografia forte.
+
+Prompt da secao:
+"Desenvolva apenas a secao MODALIDADES DE ATENDIMENTO. Use 100% da sua capacidade criativa para criar uma comparacao premium, objetiva e elegante entre Consulta Presencial e Teleconsulta. Use rubi em gradiente, dourado pouco saturado, precos bem destacados, listas de inclusoes claras e CTAs para WhatsApp, mantendo design responsavel e sem pressao comercial excessiva."
+
+Checklist de implementacao:
+[ ] Inserir titulo "Escolha a forma de consulta mais adequada para voce."
+[ ] Criar bloco Consulta Presencial com inclusoes.
+[ ] Criar bloco Teleconsulta com inclusoes.
+[ ] Inserir investimento R$ 500 e R$ 350.
+[ ] Inserir CTAs especificos.
+[ ] Diferenciar visualmente as modalidades sem hierarquia enganosa.
+[ ] Garantir que os cards nao fiquem longos demais no mobile.
+[ ] Adicionar nota de retorno em ate 30 dias.
+
+Criterios de aprovacao:
+[ ] O usuario compara as opcoes sem esforco.
+[ ] O preco fica claro e elegante.
+[ ] O CTA de cada modalidade esta visivel.
+
+----------------------------------------------------------------------
+13. SECAO 10 - TERAPIA DE AFIRMACAO DE GENERO
+----------------------------------------------------------------------
+
+Objetivo:
+Comunicar acolhimento, respeito e individualizacao para pessoas interessadas em terapia de afirmacao de genero.
+
+Design sugerido:
+Secao serena e respeitosa, com composicao limpa, sem simbolismos estereotipados. Usar rubi profundo, dourado discreto e foco em linguagem de seguranca e cuidado.
+
+Prompt da secao:
+"Desenvolva apenas a secao TERAPIA DE AFIRMACAO DE GENERO. Use 100% da sua capacidade criativa para criar uma secao respeitosa, acolhedora, profissional e visualmente sofisticada. Use fundo rubi em gradiente e dourado pouco saturado, sem cliches visuais, comunicando acompanhamento medico individualizado, escuta e respeito a identidade."
+
+Checklist de implementacao:
+[ ] Inserir titulo e paragrafos da copy.
+[ ] Destacar atendimento presencial e teleconsulta.
+[ ] Inserir CTA "Falar com a Dra. Eduarda pelo WhatsApp".
+[ ] Garantir linguagem inclusiva e respeitosa.
+[ ] Evitar estereotipos graficos.
+[ ] Manter contraste e legibilidade altos.
+
+Criterios de aprovacao:
+[ ] A secao passa seguranca e respeito.
+[ ] A abordagem visual e sofisticada e nao tokenizada.
+[ ] O CTA aparece com clareza.
+
+----------------------------------------------------------------------
+14. SECAO 11 - DEPOIMENTOS
+----------------------------------------------------------------------
+
+Objetivo:
+Mostrar relatos reais de acolhimento, escuta e clareza, sem prometer resultado.
+
+Design sugerido:
+Carrossel ou grid editorial com aspas grandes em dourado fosco, datas discretas e nota de anonimização. Evitar estrelas chamativas demais.
+
+Prompt da secao:
+"Desenvolva apenas a secao DEPOIMENTOS. Use 100% da sua capacidade criativa para criar uma area de prova social elegante, sobria e confiavel, com relatos anonimizados em destaque editorial. Use fundo rubi em gradiente, aspas ou linhas em dourado pouco saturado e uma apresentacao profissional que valorize escuta e atencao, sem parecer promessa de resultado."
+
+Checklist de implementacao:
+[ ] Inserir titulo "O que pacientes relatam sobre o atendimento".
+[ ] Inserir os 5 depoimentos da copy.
+[ ] Inserir datas e avaliacao 5 estrelas de forma discreta.
+[ ] Inserir nota de identidade preservada.
+[ ] Definir grid ou carrossel acessivel.
+[ ] Se usar carrossel, garantir controles por teclado e aria-labels.
+[ ] Evitar auto-play agressivo.
+
+Criterios de aprovacao:
+[ ] Os depoimentos reforcam escuta e acolhimento.
+[ ] A secao e sobria e compativel com publicidade medica.
+[ ] Mobile permite leitura confortavel.
+
+----------------------------------------------------------------------
+15. SECAO 12 - SOBRE A DRA. EDUARDA
+----------------------------------------------------------------------
+
+Objetivo:
+Apresentar a medica, formacao, abordagem e proposito.
+
+Design sugerido:
+Secao biografica premium com foto profissional grande, texto editorial e detalhes dourados inspirados na assinatura/logo. Evitar card pesado; preferir layout de revista.
+
+Prompt da secao:
+"Desenvolva apenas a secao SOBRE A DRA. EDUARDA. Use 100% da sua capacidade criativa para criar uma secao biografica profissional, elegante e humana, com foto em destaque, fundo rubi em gradiente e detalhes dourados pouco saturados. A secao deve comunicar ciencia, humanidade, formacao e abordagem individualizada, sem exagerar em autoridade nem criar promessa de especialidade se nao houver RQE."
+
+Checklist de implementacao:
+[ ] Inserir titulo "Ciencia para orientar. Humanidade para cuidar."
+[ ] Inserir nome completo.
+[ ] Inserir formacoes informadas.
+[ ] Inserir texto de abordagem.
+[ ] Inserir CTA "Agendar consulta com a Dra. Eduarda".
+[ ] Reservar area para foto profissional.
+[ ] Prever informacao "Nao Especialista" no rodape ou area legal, se aplicavel.
+[ ] Garantir que a bio nao pareca curriculo frio.
+
+Criterios de aprovacao:
+[ ] A medica e apresentada com confianca e humanidade.
+[ ] O layout valoriza a pessoa e a abordagem.
+[ ] Nao ha afirmacao regulatoria pendente sem validacao.
+
+----------------------------------------------------------------------
+16. SECAO 13 - PERGUNTAS FREQUENTES
+----------------------------------------------------------------------
+
+Objetivo:
+Reduzir objeções e responder duvidas comuns com clareza.
+
+Design sugerido:
+Accordion premium com linhas douradas, icones de abrir/fechar consistentes e boa acessibilidade. Fundo rubi escuro com contraste alto.
+
+Prompt da secao:
+"Desenvolva apenas a secao PERGUNTAS FREQUENTES. Use 100% da sua capacidade criativa para criar um FAQ elegante, acessivel e profissional, com accordions fluidos, detalhes dourados pouco saturados e fundo rubi em gradiente. A experiencia deve reduzir duvidas sem cansar, mantendo linguagem medica responsavel e leitura excelente no mobile."
+
+Checklist de implementacao:
+[ ] Inserir todas as perguntas e respostas da copy.
+[ ] Criar accordion acessivel com aria-expanded.
+[ ] Permitir navegacao por teclado.
+[ ] Garantir que o primeiro item possa vir aberto ou todos fechados, conforme estrategia.
+[ ] Evitar animar height de forma pesada; usar solucao performatica.
+[ ] Garantir que respostas longas tenham boa largura de linha.
+
+Criterios de aprovacao:
+[ ] O FAQ e facil de navegar.
+[ ] As respostas nao quebram layout.
+[ ] A secao ajuda na conversao sem parecer defensiva.
+
+----------------------------------------------------------------------
+17. SECAO 14 - CTA FINAL
+----------------------------------------------------------------------
+
+Objetivo:
+Fechar a pagina com convite forte, humano e direto para agendamento.
+
+Design sugerido:
+Secao de encerramento com impacto visual maior, fundo rubi profundo com gradiente dourado controlado, frase central, CTA grande e reforcos de modalidade. Pode usar composicao circular/luminosa inspirada na logo.
+
+Prompt da secao:
+"Desenvolva apenas a secao CTA FINAL. Use 100% da sua capacidade criativa para criar um fechamento emocional, premium e altamente conversivo, com fundo rubi em gradiente, dourado pouco saturado e composicao visual memoravel. A secao deve reforcar que a saude nao precisa ser tratada de forma apressada ou superficial e conduzir naturalmente ao WhatsApp, sem pressao agressiva."
+
+Checklist de implementacao:
+[ ] Inserir titulo e textos da copy.
+[ ] Inserir subtitulo "Agende sua consulta presencial ou sua teleconsulta."
+[ ] Inserir CTA "Agendar agora pelo WhatsApp".
+[ ] Inserir linha de reforco: presencial, teleconsulta, retorno em ate 30 dias.
+[ ] Criar maior impacto visual que as secoes intermediarias.
+[ ] Garantir que CTA tenha foco visual claro.
+[ ] Evitar repeticao visual direta do hero.
+
+Criterios de aprovacao:
+[ ] A secao parece fechamento natural da historia.
+[ ] O CTA e claro e desejavel.
+[ ] O design e memoravel sem exagero.
+
+----------------------------------------------------------------------
+18. SECAO 15 - FORMULARIO DE CONTATO
+----------------------------------------------------------------------
+
+Objetivo:
+Oferecer alternativa para quem prefere que a equipe entre em contato.
+
+Design sugerido:
+Formulario premium simples, com labels visiveis, campos elegantes, validacao clara e envio direcionado ao WhatsApp com mensagem montada.
+
+Prompt da secao:
+"Desenvolva apenas a secao FORMULARIO DE CONTATO. Use 100% da sua capacidade criativa para criar um formulario premium, simples, acessivel e confiavel, com fundo rubi em gradiente, campos elegantes, detalhes dourados pouco saturados e experiencia mobile impecavel. O formulario deve facilitar o contato via WhatsApp, com validacao clara e sem friccao."
+
+Checklist de implementacao:
+[ ] Inserir titulo e texto da copy.
+[ ] Criar campo Nome com label visivel.
+[ ] Criar campo WhatsApp com label visivel e tipo tel.
+[ ] Criar campo objetivo/mensagem.
+[ ] Criar botao "Solicitar contato pelo WhatsApp".
+[ ] Montar mensagem pre-preenchida com dados do formulario.
+[ ] Validar campos obrigatorios.
+[ ] Mostrar feedback de erro perto do campo.
+[ ] Garantir foco visivel e navegacao por teclado.
+[ ] Garantir privacidade: nao prometer resposta imediata sem confirmacao.
+
+Criterios de aprovacao:
+[ ] O formulario e simples e confiavel.
+[ ] No mobile, teclado correto abre para WhatsApp.
+[ ] Erros sao claros e proximos dos campos.
+
+----------------------------------------------------------------------
+19. SECAO 16 - RODAPE
+----------------------------------------------------------------------
+
+Objetivo:
+Encerrar com informacoes legais, contato, formacao e observacoes obrigatorias.
+
+Design sugerido:
+Rodape escuro, elegante e altamente legivel, com logo, dados profissionais, endereco, WhatsApp, disclaimers e nota CFM. Usar dourado apenas em detalhes.
+
+Prompt da secao:
+"Desenvolva apenas o RODAPE. Use 100% da sua capacidade criativa para criar um rodape medico premium, organizado e responsavel, com fundo rubi escuro, detalhes dourados pouco saturados e excelente legibilidade. O rodape deve acomodar CRM, RQE se houver, informacao de Nao Especialista se aplicavel, formacao, endereco, WhatsApp, teleconsulta e disclaimers de publicidade medica com sobriedade."
+
+Checklist de implementacao:
+[ ] Inserir nome completo.
+[ ] Inserir CRM-UF e numero quando confirmado.
+[ ] Inserir RQE se houver; se nao houver, manter "Nao Especialista" conforme orientacao.
+[ ] Inserir formacao informada.
+[ ] Inserir endereco/localizacao.
+[ ] Inserir teleconsulta para todo o Brasil.
+[ ] Inserir WhatsApp.
+[ ] Inserir disclaimer de informacao nao substitui consulta.
+[ ] Inserir nota sobre numeros/depoimentos se necessario.
+[ ] Inserir link/menção ao CFM se for mantido.
+[ ] Garantir que texto legal seja legivel no mobile.
+
+Criterios de aprovacao:
+[ ] O rodape resolve informacoes legais sem parecer improvisado.
+[ ] O texto nao fica pequeno demais.
+[ ] Dados pendentes estao claramente marcados para confirmacao.
+
+----------------------------------------------------------------------
+20. FASE FINAL - POLIMENTO, QA E PUBLICACAO
+----------------------------------------------------------------------
+
+Objetivo:
+Garantir que a landing page inteira esteja consistente, rapida, responsiva, acessivel e pronta para publicacao.
+
+Prompt da fase:
+"Revise a landing page completa da Dra. Eduarda Campos com olhar de diretor de arte, especialista em UX e revisor de publicidade medica. Use 100% da sua capacidade criativa e critica para elevar acabamento visual, consistencia, responsividade, acessibilidade, performance e conversao, mantendo a paleta rubi com dourado pouco saturado e evitando qualquer promessa indevida."
+
+Checklist visual:
+[ ] Todas as secoes parecem parte da mesma marca.
+[ ] Cada secao tem uma ideia visual propria.
+[ ] Nao ha repeticao excessiva de cards.
+[ ] O dourado esta elegante, fosco e pouco saturado.
+[ ] O rubi tem profundidade sem prejudicar leitura.
+[ ] CTAs estao distribuidos com criterio.
+[ ] Espacamento mobile esta confortavel.
+[ ] Nenhum texto quebra, sobrepoe ou fica cortado.
+[ ] Fotos/assets possuem proporcao correta.
+
+Checklist tecnico:
+[ ] Testar em 375px, 768px, 1024px e 1440px.
+[ ] Testar no Chrome, Safari/Edge quando possivel.
+[ ] Validar contraste dos textos.
+[ ] Validar foco visivel.
+[ ] Validar botoes e links de WhatsApp.
+[ ] Validar formulario.
+[ ] Validar accordion do FAQ.
+[ ] Otimizar imagens em WebP/AVIF.
+[ ] Definir width/height ou aspect-ratio das imagens.
+[ ] Minificar assets se aplicavel.
+[ ] Rodar build do projeto.
+[ ] Corrigir erros de console.
+
+Checklist de conteudo e compliance:
+[ ] Confirmar CRM e UF.
+[ ] Confirmar RQE ou manter "Nao Especialista".
+[ ] Confirmar endereco.
+[ ] Confirmar numero do WhatsApp.
+[ ] Confirmar precos R$ 500 e R$ 350.
+[ ] Confirmar retorno em ate 30 dias.
+[ ] Confirmar +850 atendimentos e 167 avaliacoes.
+[ ] Confirmar que depoimentos estao anonimizados.
+[ ] Remover qualquer promessa de resultado.
+[ ] Revisar termos sensiveis de saude.
+
+----------------------------------------------------------------------
+21. ORDEM RECOMENDADA DE EXECUCAO
+----------------------------------------------------------------------
+
+Dia 1 - Base e primeira impressao:
+[ ] Fase 0 - Fundacao visual.
+[ ] Secao 1 - Hero.
+[ ] Secao 2 - Prova social.
+
+Dia 2 - Narrativa e identificacao:
+[ ] Secao 3 - Identificacao com a dor.
+[ ] Secao 4 - Diferencial da consulta.
+[ ] Secao 5 - Areas de atendimento.
+
+Dia 3 - Blocos estrategicos:
+[ ] Secao 6 - Para mulheres.
+[ ] Secao 7 - Emagrecimento.
+[ ] Secao 8 - Como funciona a consulta.
+
+Dia 4 - Conversao e confianca:
+[ ] Secao 9 - Modalidades.
+[ ] Secao 10 - Terapia de afirmacao de genero.
+[ ] Secao 11 - Depoimentos.
+
+Dia 5 - Autoridade, duvidas e fechamento:
+[ ] Secao 12 - Sobre a Dra. Eduarda.
+[ ] Secao 13 - FAQ.
+[ ] Secao 14 - CTA final.
+
+Dia 6 - Contato, legal e revisao:
+[ ] Secao 15 - Formulario.
+[ ] Secao 16 - Rodape.
+[ ] Fase final - QA, ajustes e publicacao.
+
+----------------------------------------------------------------------
+22. PROMPT CURTO PARA USAR A CADA NOVA SECAO
+----------------------------------------------------------------------
+
+"Vamos desenvolver somente a proxima secao da landing page da Dra. Eduarda Campos, sem criar o restante da pagina. Use 100% da sua capacidade criativa para criar um design profissional, sofisticado, responsivo e memoravel, seguindo a paleta rubi em gradiente com dourado pouco saturado da logo (#FFF6E1 a #C4B290). Mantenha a linguagem medica responsavel, sem promessas de resultado, com CTA claro para WhatsApp quando aplicavel. Ao finalizar, entregue a secao completa, checklist de validacao e pontos que precisam ser conferidos antes de avancar."
+
+----------------------------------------------------------------------
+23. DEFINICAO DE PRONTO POR SECAO
+----------------------------------------------------------------------
+
+Uma secao so esta pronta quando:
+[ ] Conteudo da copy foi aplicado corretamente.
+[ ] Design esta profissional e criativo, nao generico.
+[ ] A paleta rubi/dourado esta respeitada.
+[ ] Mobile e desktop foram pensados.
+[ ] CTA funciona, se existir.
+[ ] Acessibilidade minima foi verificada.
+[ ] Nao ha promessa medica indevida.
+[ ] A secao conversa visualmente com a anterior e prepara a proxima.
+
+Fim do cronograma.
