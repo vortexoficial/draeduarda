@@ -1635,7 +1635,7 @@ select {
   margin-right: clamp(18px, 3.8vw, 64px);
 }
 
-.service-card--accent {
+.service-card:nth-child(even) {
   border-color: rgba(255, 246, 225, 0.26);
   background:
     linear-gradient(135deg, rgba(255, 246, 225, 0.13), rgba(255, 246, 225, 0.02)),
@@ -1709,7 +1709,7 @@ select {
   line-height: 1.62;
 }
 
-.service-card--accent .service-card__number {
+.service-card:nth-child(even) .service-card__number {
   border-color: rgba(255, 246, 225, 0.28);
   background: rgba(255, 246, 225, 0.12);
   box-shadow:
@@ -1718,15 +1718,15 @@ select {
   color: var(--gold-100);
 }
 
-.service-card--accent .service-card__number::before {
+.service-card:nth-child(even) .service-card__number::before {
   border-color: rgba(255, 246, 225, 0.34);
 }
 
-.service-card--accent h3 {
+.service-card:nth-child(even) h3 {
   color: var(--gold-100);
 }
 
-.service-card--accent p {
+.service-card:nth-child(even) p {
   color: rgba(251, 247, 240, 0.76);
 }
 
@@ -1736,7 +1736,7 @@ select {
   transform: translateY(-3px);
 }
 
-.service-card--accent:hover {
+.service-card:nth-child(even):hover {
   border-color: rgba(255, 246, 225, 0.38);
   box-shadow: 0 30px 72px rgba(62, 41, 57, 0.22);
 }
@@ -5015,7 +5015,7 @@ select {
     font-size: 0.94rem;
   }
 
-  .service-card--accent .service-card__number {
+  .service-card:nth-child(even) .service-card__number {
     box-shadow:
       0 0 0 6px rgba(112, 74, 103, 0.34),
       0 10px 24px rgba(32, 20, 30, 0.14);
